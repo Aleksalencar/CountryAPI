@@ -27,3 +27,9 @@ async def get_countries():
 async def add_country(country: Country):
     countries.append(country)
     return country
+
+@app.get("/countries/{id}")
+async def get_countries(id: int):
+    for country in countries:
+        if country.country_id == id:
+            return country
