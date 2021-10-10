@@ -1,3 +1,6 @@
-
+.deta
+__pycache__
+venv
+.gitattributes
 *.pyc
-.idea/vcs.xml
+.idea/
